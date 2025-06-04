@@ -101,8 +101,16 @@
 	.address{
 		display: none;
 	}
-	.banner h4, h1{
+	.banner h4{
+		margin-left: 20px;
+		/* margin-right: 20px; */
+
+	}
+	.lux{
+		font-size: 60px;
 		margin-left: 10px;
+		margin-right: 20px;
+
 	}
   }
   .hamburger {
@@ -400,15 +408,15 @@ color: #c1c9c8;
 @media(min-width: 300px) and (max-width: 767px) and (orientation:portrait){
 	.footer{
 		padding-top: 30px;
+		width: auto;
 	}
 	.footer-menu{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		/* padding-top: -100px; */
-		/* margin-top:0; */
 	}
 	.top{
-		margin-left: 10px;
+		display: none;
+		margin-left: 30px;
 	}
   }
 .footer-menu li{
@@ -540,6 +548,12 @@ display: flex;
 	grid-gap: 20px; 
 	justify-content: center;
 	margin-bottom: 80px;
+}
+@media(min-width: 300px) and (max-width: 767px) and (orientation:portrait){
+	.feedback{
+		display: flex;
+		flex-direction:column;
+	}
 }
 .contact-adress{
 	display: flex;
